@@ -18,6 +18,7 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
+   arch/components.rst
    contracts/contracts-specification.rst
