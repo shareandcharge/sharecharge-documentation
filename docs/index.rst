@@ -21,4 +21,5 @@ Contents
    :maxdepth: 4
 
    arch/components.rst
+   project-mgmt/dev-roadmap.rst
    contracts/contracts-specification.rst
