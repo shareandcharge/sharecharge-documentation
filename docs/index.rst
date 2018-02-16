@@ -20,6 +20,7 @@ Contents
 .. toctree::
    :maxdepth: 4
 
+   arch/overview.rst
    arch/components.rst
    project-mgmt/dev-roadmap.rst
    contracts/contracts-specification.rst
