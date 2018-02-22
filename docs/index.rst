@@ -21,6 +21,11 @@ Contents
    :maxdepth: 4
 
    arch/overview.rst
-   arch/components.rst
+   ev-charging-network/index.rst
+   client-libraries/index.rst
+   core-client/index.rst
+   bridges/index.rst
+   cli/index.rst
+   dapp-sdk/index.rst
    project-mgmt/dev-roadmap.rst
    contracts/contracts-specification.rst
