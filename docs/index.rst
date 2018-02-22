@@ -21,6 +21,7 @@ Contents
    :maxdepth: 4
 
    arch/overview.rst
+   arch/client-configuration.rst
    ev-charging-network/index.rst
    client-libraries/index.rst
    core-client/index.rst
