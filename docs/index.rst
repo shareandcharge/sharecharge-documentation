@@ -22,5 +22,6 @@ Contents
 
    arch/overview.rst
    arch/components.rst
+   arch/client-configuration.rst
    project-mgmt/dev-roadmap.rst
    contracts/contracts-specification.rst
