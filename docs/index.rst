@@ -18,7 +18,7 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
 
    arch/overview.rst
    arch/client-configuration.rst
