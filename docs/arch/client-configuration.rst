@@ -10,39 +10,32 @@ Provisioning your config file
 An example ``conf.yaml`` is provided in the Core Client root directory::
 
     --- 
-      statusUpdateInterval: 5000
+      statusInterval: 5000
       connectorData: ./connectors.json
       test: false
-      
-      bridge:
-        name: Bridge
-        path: ./testBridge1
-
+      bridge: ./testBridge1
 
 TOML can also be used::
 
-    statusUpdateInterval = 5000
+    statusInterval = 5000
     connectorData = "./connectors.json"
     test = false
-    
-    [bridge]
-    name = "Bridge"
-    path = "./testBridge.ts"
+    bridge = "./testBridge1"
 
 The configuration file can be invoked by using the ``--config`` flag::
 
     sc client --config conf.yaml
 
-Otherwise, command line options can be used as usual::
+Otherwise, command line options can be used as usual and will overwite values in the config file::
 
-    sc client --test=false --status-update-interval 5000
+    sc client --config conf.yaml --status-interval 5000
 
 
 
 Configuration Values
 ====================
 
-``connector-data``
+``connectors``
 ------------------
 The path to the JSON file containing connector information. This is used to register connectors on the S&C EV Network.
 
@@ -63,7 +56,7 @@ Example ``connectors.json``::
       }
     }
 
-``status-update-interval``
+``status-interval``
 --------------------------
 The time to wait between intervals when requesting connector availability updates from the bridge.
 
@@ -71,16 +64,8 @@ The time to wait between intervals when requesting connector availability update
 --------
 Mock the Ethereum smart contracts used by the S&C EV Network.
 
-
 ``bridge``
 ----------
-
-``name``
-^^^^^^^^
-The name of the bridge class.
-
-``path``
-^^^^^^^^
 The path to the bridge class.
 
 
