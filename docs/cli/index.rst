@@ -65,3 +65,35 @@ Example::
     Bridge Available: true
     Bridge name: test2
 
+
+Client Subcommand Usage::
+
+    sc client --help
+    Usage: sc client [options]
+
+    Options:
+      --json             generate json output
+      --config           Path to plaintext config file
+      --id               The client ID used to filter EV charge requests    [string]
+      --pass             The password of the user's Ethereum address for confirming
+                         charge sessions                      [string] [default: ""]
+      --bridge           Path to the bridge which the Core Client should connect to
+                                                                            [string]
+      --connectors       Path to the connector data if registration of connectors
+                         required                                           [string]
+      --test             Use a mock S&C EV ChargingStation contract        [boolean]
+      --status-interval  Specify interval between connector status updates from
+                         bridge                            [number] [default: 30000]
+      -v, --version      Show version number                               [boolean]
+      -h, --help         Show help                                         [boolean]
+
+Example::
+
+    sc client
+    2018-03-06T14:48:46.803Z - warn: No Client ID found in configuration!
+    2018-03-06T14:48:46.805Z - warn: No Ethereum password found in configuration!
+    2018-03-06T14:48:46.841Z - debug: Type of contract: Contract
+    2018-03-06T14:48:46.846Z - info: Configured to update every 30000ms
+    2018-03-06T14:48:46.846Z - debug: Bridge status: true
+    2018-03-06T14:48:46.847Z - info: Core Client connected to test1 bridge
+    2018-03-06T14:48:46.847Z - info: Listening for events...
