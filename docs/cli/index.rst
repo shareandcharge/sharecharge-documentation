@@ -12,6 +12,21 @@ To install the cli you have to use::
 
     npm link
 
+General Usage::
+
+    sc --help
+    Usage: sc <command> [options]
+
+    Commands:
+      sc cp      Charge Point commands
+      sc bridge  Bridge commands
+      sc client  Run the S&C Core Client
+
+    Options:
+      --json         generate json output
+      -v, --version  Show version number           [boolean]
+      -h, --help     Show help                     [boolean]
+
 Charge Point on EV Network Subcommand Usage::
 
     sc cp --help
@@ -74,18 +89,14 @@ Client Subcommand Usage::
     Options:
       --json             generate json output
       --config           Path to plaintext config file
-      --id               The client ID used to filter EV charge requests    [string]
-      --pass             The password of the user's Ethereum address for confirming
-                         charge sessions                      [string] [default: ""]
-      --bridge           Path to the bridge which the Core Client should connect to
-                                                                            [string]
-      --connectors       Path to the connector data if registration of connectors
-                         required                                           [string]
-      --test             Use a mock S&C EV ChargingStation contract        [boolean]
-      --status-interval  Specify interval between connector status updates from
-                         bridge                            [number] [default: 30000]
-      -v, --version      Show version number                               [boolean]
-      -h, --help         Show help                                         [boolean]
+      --id               The client ID used to filter EV charge requests                            [string]
+      --pass             The password of the user's Ethereum address for confirming charge sessions [string] [default: ""]
+      --bridge           Path to the bridge which the Core Client should connect to                 [string]
+      --connectors       Path to the connector data if registration of connectors required          [string]
+      --test             Use a mock S&C EV ChargingStation contract                                 [boolean]
+      --status-interval  Specify interval between connector status updates from bridge              [number] [default: 30000]
+      -v, --version      Show version number                                                        [boolean]
+      -h, --help         Show help                                                                  [boolean]
 
 Example::
 
