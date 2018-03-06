@@ -7,3 +7,61 @@ Command Line Interface (CLI)
 The **Command Line Interface (CLI)** is the perfect tool for advanced users to interact and operate in our **EV Charging Network** straight from your terminal. **CP Owners** can deploy and manage their Charging Point assets, while **EV Users** access the network to browse, discover and use such assets.
 
 Each implementation of a CLI will make use of its correspondent implementation of **EV Network Client Library**. For instance, the *Node.js* based CLI will use the *Node.js* EV Library. Different flavour are delivered, in order to best suit different needs for different environments or application stacks.
+
+To install the cli you have to use::
+
+    npm link
+
+Charge Point on EV Network Subcommand Usage::
+
+    sc cp --help
+    Usage: sc cp <command> [options]
+
+    Commands:
+      sc cp status [id]           Returns the current status of the Charge Point with given id
+      sc cp info [id]             Returns the current info of the Charge Point with given id
+      sc cp disable [id]          Disables the Charge Point with given id
+      sc cp enable [id]           Enables the Charge Point with given id
+      sc cp register [id]         Registers a Charge Point with given id in the EV Network
+      sc cp start [id] [seconds]  Start a charging session at a given Charge Point
+
+    Options:
+      --json         generate json output
+      -v, --version  Show version number                                   [boolean]
+      -h, --help     Show help                                             [boolean]
+
+Example::
+
+    sc cp register 0x01
+    Registering CP with id: 0x01 for client: 0x09
+    Success: true
+    Tx: 0xc55409b655a829f1b5d7631f9dde219538c9fbf60c347bf222e0f82cc19fb2b3
+    Block: 156334
+
+    sc cp start 0x01
+    Starting charge on 0x01 for 10 seconds...
+    Start request by 0xf2035405c983638c6d560d43ce199240f6bf135d included in block 156362
+    Start confirmation included in block 156364
+    Charging [================================================================================] 10s
+    Stop confirmation included in block 156376
+
+Charge Point on Bridge Subcommand Usage::
+
+    sc bridge --help
+    Usage: sc bridge <command> [options]
+
+    Commands:
+      sc bridge status  Returns the current status of the configured Bridge
+
+    Options:
+      --json         generate json output
+      -v, --version  Show version number                                   [boolean]
+      -h, --help     Show help                                             [boolean]
+
+Example::
+
+    sc bridge status 0x12
+    Getting status of bridge.
+    Bridge Available: true
+    Bridge name: test2
+
