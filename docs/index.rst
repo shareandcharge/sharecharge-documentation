@@ -30,3 +30,4 @@ Contents
    dapp-sdk/index.rst
    project-mgmt/dev-roadmap.rst
    contracts/contracts-specification.rst
+   tobalaba/index.rst
