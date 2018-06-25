@@ -1,4 +1,4 @@
-Tobalaba Stuff
+Tobalaba
 =======================
 
 1. Follow: https://energyweb.atlassian.net/wiki/spaces/EWF/pages/72974337/How+to+get+started+with+Tobalaba
