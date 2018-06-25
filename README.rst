@@ -4,7 +4,7 @@ Share&Charge Documentation
 
 This is the official guide for the Share&Charge open network and components.
 
-#### http://sharecharge-documentation.readthedocs.io/en/latest/
+http://sharecharge-documentation.readthedocs.io/en/latest/
 
 Building this documentation
 ===========================
