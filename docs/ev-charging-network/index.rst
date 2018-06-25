@@ -2,6 +2,9 @@
 EV Charging Network
 ===================
 
+http://sharecharge-documentation.readthedocs.io/en/latest/
+
+
 **Proof-of-Authority based blockchain network for the Share&Charge platform**
 
 * Running in a consortium PoA network.
@@ -28,4 +31,16 @@ start parity with
 
 ~~~~
 ./parity --chain tobalaba --reserved-peers myPrivateNetwork.txt --pruning=archive --rpcapi "web3,eth,personal" --db-compaction=ssd --cache-size=2048
+~~~~
+
+
+new linux. since setup info is not complete, I'm pasting here the full commands
+
+ubuntu 16
+~~~~
+sudo apt install gcc g++ libssl-dev openssl git make 
+curl https://sh.rustup.rs -sSf | sh
+git clone https://github.com/paritytech/parity
+cd parity
+cargo build --release
 ~~~~
