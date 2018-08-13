@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Share&Charge Documentation'
-copyright = '2018, SC Team'
-author = 'SC Team'
+copyright = '2018, Share&Charge'
+author = 'S&C Core Development Team'
 
 # The short X.Y version
 version = ''
@@ -130,8 +130,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'ShareChargeDocumentation.tex', 'Share\\&Charge Documentation Documentation',
-     'SC Team', 'manual'),
+    (master_doc, 'ShareChargeDocumentation.tex', 'Share\\&Charge Documentation',
+     'S\\&C Core Development Team', 'manual'),
 ]
 
 
