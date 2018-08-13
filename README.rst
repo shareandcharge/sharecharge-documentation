@@ -16,18 +16,23 @@ This project uses:
 
 **Install or update** Pipenv to your system::
 
-   pip3 install -U pip pipenv
+    pip3 install -U pip pipenv
 
 From inside the root folder, **activate your virtualenv shell**::
 
-   pipenv shell
+    pipenv shell
 
 Install **dependencies**::
 
-   pipenv install
+    pipenv install
 
 From the ``docs`` folder, build the HTML and open the index page::
 
-   cd docs/
-   make html
-   open _build/html/index.html
+    cd docs/
+    make html
+    open _build/html/index.html
+
+Or if you want to create a PDF::
+
+    make latexpdf
+    open _build/latex/ShareChargeDocumentation.pdf

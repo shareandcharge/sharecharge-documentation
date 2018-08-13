@@ -2,17 +2,23 @@
 EV Network Client Libraries
 ===========================
 
-**Libraries conveniently exposing the business logic behind the S&C EV Charging Network.**
+**Exposes an API for the business logic behind the S&C EV Charging Network.**
 
-Our EV Libraries allow a **programmatic access** to all the functionality implemented in the **EV Charging Network**, such as:
+Overview
+========
 
-* **CP Owners** provisioning their **Charging Points** to be accessible by the rest of Share&Charge users (usually with convenience tools such as our **S&C Command Line Interface)**
-* **EV Users** accessing the network to discover, evaluate and request new charging processes from the existing offer of **Charging Points**.
+Our *S&C Libraries* allow a **programmatic access** to all the functionality implemented in the **EV Charging Network**. For instance:
 
-Initially, interacting with our smart contracts involves communicating to a node through RPC calls (using **Web3**). This can be sometimes cumbersome to learn and implement. Thus, to make coding against these **easier**, Share&Charge provides client libraries in **different languages** that reduce this friction and empower developers to focus on making robust products and services on top of our platform.
+* **CP Owners** provisioning their **Charging Points** to be accessible by the rest of Share&Charge users
+* **EV Drivers** accessing the network to discover, evaluate and request new charging processes from the existing offer of **Charging Points**.
 
-Featured Libraries
-------------------
+Interacting directly with our smart contracts can be difficult to learn, implement and maintain. To make coding against these **easier**, Share&Charge provides client libraries in **different languages** that reduce this friction and empower developers to focus on making robust products and services on top of our platform.
 
-* JavaScript: TODO link to docs
-* Python: TODO link to docs
+Currently we have a *Typescript* reference implementation of the S&C Library that can be run in backend solutions but also in the **browser**, so that *Dapps* can make use of the library to create business applications. This latest fact is paramount to push forward a growing **ecosystem** of *MSPs* gaining the interest of new EV Drivers on acquiring tokens and start operating in Share&Charge.
+
+Similarly, on the *CPO* side there will be different scenarios where the S&C Library fits perfectly as the integration agent in their systems to manage charging stations, monitor up times, measure transactions, etc. Currently a port of the Library into *Python* is being explored, as this language is widely used in contexts as the mentioned before.
+
+In a Nutshell
+=============
+
+TODO
