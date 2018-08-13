@@ -7,7 +7,7 @@
 Share&Charge documentation
 ==========================
 
-..  image:: img/sc_background.png
+.. image:: img/sc_background.png
 ..   :height: 500px
 ..   :width: 394 px
    :scale: 50 %
