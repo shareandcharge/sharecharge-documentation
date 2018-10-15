@@ -1,5 +1,5 @@
 ================================
-Hihg Level Architecture Overview
+High Level Architecture Overview
 ================================
 
 .. image:: img/sc_arch_201803.png

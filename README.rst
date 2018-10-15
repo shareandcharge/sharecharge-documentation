@@ -26,13 +26,20 @@ Install **dependencies**::
 
     pipenv install
 
-From the ``docs`` folder, build the HTML and open the index page::
+From the ``docs`` folder, build the HTML::
 
     cd docs/
     make html
+
+Open the index page on MacOS::
+
     open _build/html/index.html
 
-Or if you want to create a PDF::
+Or on a Linux distribution::
+
+    firefox _build/html/index.html
+
+Alternatively, if you want to create a PDF::
 
     make latexpdf
     open _build/latex/ShareChargeDocumentation.pdf
