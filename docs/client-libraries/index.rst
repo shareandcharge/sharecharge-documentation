@@ -16,9 +16,22 @@ Interacting directly with our smart contracts can be difficult to learn, impleme
 
 Currently we have a *Typescript* reference implementation of the S&C Library that can be run in backend solutions but also in the **browser**, so that *Dapps* can make use of the library to create business applications. This latest fact is paramount to push forward a growing **ecosystem** of *MSPs* gaining the interest of new EV Drivers on acquiring tokens and start operating in Share&Charge.
 
-Similarly, on the *CPO* side there will be different scenarios where the S&C Library fits perfectly as the integration agent in their systems to manage charging stations, monitor up times, measure transactions, etc. Currently a port of the Library into *Python* is being explored, as this language is widely used in contexts as the mentioned before.
+Similarly, on the *CPO* side there will be different scenarios where the S&C Library fits perfectly as the integration agent in their systems to manage charging stations, monitor up times, measure transactions, etc. Currently a port of the Library into *Python* is being explored, as this language is widely used in the contexts mentioned before.
 
 In a Nutshell
 =============
 
-TODO
+* **Reference library** to facilitate *smart contract operations*.
+* **MSP, CPO and driver** functionality built in.
+* **Usable client or server side** to aid in the development of DApps.
+
+Install and Usage
+=================
+
+The Library can be installed as an NPM package for JavaScript or TypeScript development: ::
+
+    npm install @motionwerk/sharecharge-lib
+
+A comprehensive guide to the library is provided in the README of the package, the source for which can be found on github_.
+
+.. _github: https://github.com/motionwerkGmbH/sharecharge-lib.js.

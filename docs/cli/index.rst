@@ -2,7 +2,7 @@
 Command Line Interface (CLI)
 ============================
 
-**Mid-level approach that uses the S&C Library to expose commands that perform operations on the EV Chain.**
+**Mid-level approach that uses the S&C Library to expose commands that perform operations on the EV Network.**
 
 Overview
 ========
@@ -14,4 +14,23 @@ This is a mid-level approach to provide an interface for advanced users that wan
 In a Nutshell
 =============
 
-TODO
+* **Setup and configure** the Share & Charge software stack
+* **Deploy MSP contracts** and **mint tokens for drivers**
+* **Provision locations** on the network
+* **Find locations** and **initiate charging sessions** for testing 
+
+Install and Usage
+=================
+
+The CLI is available as an NPM package: ::
+
+    npm install -g @motionwerk/sharecharge-cli
+
+Six key modules are provided as subcommands, these being S&C software stack configuration, data provisioning, charge session access, wallet and token management, and charge detail record indexing. They can be initiated, for example, in the following way: ::
+
+    sc-cli wallet balance
+
+Help can be provided on the top level, or for individual subcommands: ::
+
+    sc-cli -h
+    sc-cli token -h

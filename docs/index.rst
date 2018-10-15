@@ -22,8 +22,9 @@ Contents
 
    arch/overview.rst
    ev-charging-network/index.rst
+   quickstart/index.rst
    client-libraries/index.rst
-   core-client/index.rst
-   bridges/index.rst
    cli/index.rst
    rest-api/index.rst
+   core-client/index.rst
+   bridges/index.rst

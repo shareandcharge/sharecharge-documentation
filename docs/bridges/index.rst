@@ -23,4 +23,23 @@ In a Nutshell
 
 * **Proxy** between CPO and EV Charging Network using protocols such OCPP, OCPI, proprietary APIs or direct communications protocols such as ModBus.
 * **Pluggable system** that can be extended over time with as many integrations with CPO APIs as needed.
-* **Mock bridge** should be included to help developers build and test functionality without having to set up a real API.
+* **Mock bridge** included in Core Client installs to help developers build and test functionality without having to set up a real API.
+
+Install and Usage
+=================
+
+Official bridges, such as the Share & Charge OCPI bridge, can be installed via NPM: ::
+
+    npm install -g @motionwerk/sharecharge-ocpi-bridge
+
+To use the bridge, the Core Client can be configured to use it: ::
+
+    sc-cli config set bridgePath @motionwerk/sharecharge-ocpi-bridge
+
+*Note that the OCPI bridge provides a binary for additional OCPI-specific configuration. In particular, OCPI requires a one time registration that should not be done during runtime of the Core Client.*
+
+When running the Core Client again, the bridge will have changed if successful: ::
+
+    $ sc-cc start
+    Connected to bridge: OCPI
+
